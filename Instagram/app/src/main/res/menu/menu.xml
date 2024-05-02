@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/home_nav"
+        app:showAsAction="always"
+        android:title="@null"
+        android:enabled="true"
+        android:icon="@drawable/btm_home_selector" />
+    <item
+        android:id="@+id/search_nav"
+        app:showAsAction="always"
+        android:title="@null"
+        android:icon="@drawable/btm_search_selector"/>
+    <item
+        android:id="@+id/post_nav"
+        app:showAsAction="always"
+        android:title="@null"
+        android:icon="@drawable/btm_post_selector"/>
+    <item
+        android:id="@+id/profile_nav"
+        app:showAsAction="always"
+        android:title="@null"
+        android:icon="@drawable/btm_profile_selector"/>
+</menu>

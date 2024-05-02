@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="20dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/item_story_cv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:strokeColor="@color/story"
+        app:strokeWidth="3dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_margin="4dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="@color/white">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/story_exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.card.MaterialCardView>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/story_nickname_tv"
+        android:text="yunsuk990"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/item_story_cv"
+        app:layout_constraintEnd_toEndOf="@+id/item_story_cv"
+        app:layout_constraintTop_toBottomOf="@+id/item_story_cv"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

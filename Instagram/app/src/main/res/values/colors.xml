@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="story">#C01CAC</color>
+    <color name="line">#D1D1D1</color>
+    <color name="gray">#C0C0C0</color>
+
+    <color name="dark_gray">#B7B7B7</color>
+    <color name="dark_gray1">#646464</color>
+    <color name="light_blue">#2A99ED</color>
+
+    <color name="blue">#0019F4</color>
+    <color name="search">#E9E9ED</color>
+
+</resources>

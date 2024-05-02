@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Instagram</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--  profile  -->
+    <string name="profile_postNum">0</string>
+    <string name="profile_followerNum">0</string>
+    <string name="profile_followingNum">0</string>
+    <string name="profile_userId">username</string>
+</resources>

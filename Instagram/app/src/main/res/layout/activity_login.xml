@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/login_Instagram_logo_iv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/instagram_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- 첫 번째 CardView -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_id_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:boxStrokeColor="@color/search"
+        app:boxStrokeWidth="0.5dp"
+        android:layout_marginEnd="16dp"
+        app:cursorColor="@color/black"
+        android:layout_marginTop="50dp"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:hintTextColor="@color/black"
+        app:boxBackgroundColor="@color/search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:pointerIcon="none"
+        app:layout_constraintTop_toBottomOf="@+id/login_Instagram_logo_iv">
+
+        <!-- 아이디 입력란 -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_edit_id_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="사용자 이름, 이메일 주소 또는 휴대폰 번호"
+            android:textSize="16sp"
+            android:background="@null"
+            android:pointerIcon="none"
+            android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <!-- 두 번째 CardView -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_password_cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:hintTextColor="@color/black"
+        app:boxBackgroundColor="@color/search"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/search"
+        app:boxStrokeWidth="0.5dp"
+        app:cursorColor="@color/black"
+        android:pointerIcon="none"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/login_id_cardView"
+        app:layout_constraintStart_toStartOf="@+id/login_id_cardView"
+        app:layout_constraintTop_toBottomOf="@+id/login_id_cardView">
+
+        <!-- 비밀번호 입력란 -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_edit_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:pointerIcon="none"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_sign_in_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="로그인"
+        android:background="@drawable/rounded_layout_blue"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_password_cardView" />
+
+    <TextView
+        android:id="@+id/login_forgot_password_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="비밀번호를 잊으셨나요?"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/login_sign_in_btn" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_sign_up_new_account_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:text="새 계정 만들기"
+        android:background="@drawable/rounded_layout_blue_stroke"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_forgot_password_tv"
+        app:layout_constraintBottom_toTopOf="@+id/login_meta_iv" />
+
+    <ImageView
+        android:id="@+id/login_meta_iv"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/meta"
+        app:layout_constraintTop_toBottomOf="@+id/login_sign_up_new_account_btn"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
